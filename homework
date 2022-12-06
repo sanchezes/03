@@ -1,0 +1,17 @@
+var mas =[1, 2, 5, 6, 8, 9, 10, 12, 17, 20];
+for(var i=0, tmp; i<mas.length-1;i++){
+for(var j=0; j<mas.length-1;j++){
+    if(mas[j]>mas[j+1]){
+		tmp=mas[j];
+		mas[j]=mas[j+1];
+		mas[j+1]=tmp;
+    }
+	}
+}
+const mas1= [];
+for(var i=0, tmp; i<mas.length-1;i++){
+if(mas[i]%2!==0){
+  mas1.push(mas [i])
+}
+}
+console.log (mas1);
